@@ -13,7 +13,9 @@ echo "$(date '+%Y-%m-%d %H:%M:%S") - $message" >> "$LOG_FILE"
 }
 
 # in this function we start to cleanup the temporary files
+
 cleanup_temp_files() {
+
 log_message "starting cleanup of temporary files." # Logs the start of temporary file
 # rm cmd is used to delete the empty files and we use -rf to delete recurcively forcefully deletion 
 rm -rf /tmp/* # Deletes all files and directories in /tmp
